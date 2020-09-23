@@ -5,6 +5,10 @@ header
     position: fixed
     width: 100%
     height: 54px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
     &__wrapper > div
         width: 33%
         display: flex
@@ -12,10 +16,6 @@ header
         &:last-child
             display: flex
             justify-content: flex-end
-    &__wrapper
-        display: flex
-        justify-content: space-between
-        align-items: center
     &__name
         margin: 0 auto
     &__contacts
@@ -59,9 +59,9 @@ header
             color: #86BC42
     &__cabinet
         width: 300px
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        display: flex
+        justify-content: flex-end
+        align-items: center
     &__login
         margin-right: 34px
         font-family: 'OpenSans'
@@ -75,13 +75,12 @@ header
             text-decoration: none
             color: #ffffff
         img
-            margin-right: 12px
-        
+            margin-right: 12px  
     &__regist
         border: none
         width: 166px
         height: 54px
-        background: #86BC42;
+        background: #86BC42
         font-family: 'OpenSans'
         font-style: normal
         font-weight: bold
