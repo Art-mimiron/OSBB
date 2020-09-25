@@ -1,0 +1,58 @@
+.feed
+    min-height: 734px
+    padding: 50px 167px 56px 167px
+    &__carousel
+        margin-top: 39px
+    &__text
+        width: 539px
+        height: 425px
+        padding: 27px 0 41px 0
+        a 
+            font-family: "OpenSans"
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 20px
+            color: #86BC42
+            position: relative
+            &:hover
+                text-decoration: none
+            &::after
+                content: ''
+                display: block
+                width: 37px
+                height: 6px
+                position: absolute
+                +vert_center
+                right: -50px
+                background: url(../img/icons/green_right_arrow.svg) center (center/cover) no-repeat
+    &__header
+        font-family: "OpenSans"
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.045em
+        text-transform: uppercase
+        color: #6E788D;
+        margin-left: 237px
+        margin-top: 40px
+        position: relative
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            width: 114px
+            height: 3px
+            background: #86BC42
+            top: -18px
+            left: -114px
+    &__descr
+        margin: 37px 0 40px 305px
+        font-family: "OpenSans"
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 20px
+        color: #9CA3AB
+    
