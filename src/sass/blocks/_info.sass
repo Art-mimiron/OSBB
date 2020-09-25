@@ -1,0 +1,58 @@
+.info
+    min-height: 580px
+    padding-bottom: 76px
+    background: #fff
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 35px
+    &__descr
+        width: 650px
+        height: 385px
+        margin-right: 55px
+        p
+            font-family: 'OpenSans'
+            font-weight: normal
+            font-size: 16px
+            line-height: 20px
+            color: #9CA3AB
+    &__partners
+        width: 458px
+        height: 385px
+        padding: 37px 48px 70px 48px
+        background: #FFFFFF
+        box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15)
+        border-radius: 5px
+        ol 
+            list-style: none
+            counter-reset: num
+            li 
+                position: relative
+                margin-top: 52px
+                a
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 19px
+                    text-decoration-line: underline
+                    color: #9CA3AB
+            li::before
+                content: counter(num)
+                counter-increment: num
+                font-family: 'OpenSans'
+                font-style: normal
+                font-weight: bold
+                font-size: 16px
+                line-height: 22px
+                color: #86BC42
+                margin-right: 30px
+            li::after
+                content: ''
+                display: block
+                position: absolute
+                right: auto
+                left: -24px
+                bottom: -17px
+                width: 56px 
+                height: 56px
+                background: url(../img/icons/list_ellipse.png) center (center / cover) no-repeat
