@@ -1,0 +1,86 @@
+.footer
+    height: 180px
+    &__wrapper
+        display: flex
+        justify-content: center
+    &__about
+        margin: 0 auto
+        padding: 10px 30px 15px 67px
+        h2
+            text-align: center
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &__head
+        a 
+            color: #6E788D
+    &__descr
+        text-align: left
+        font-family: "OpenSans"
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #9CA3AB
+        width: 265px
+        margin-top: 15px
+    &__links
+        margin-top: 20px
+        img
+            margin-right: 15px
+    &__list
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 500px
+        height: 100px
+        list-style-type: none
+        margin-top: 25px
+        margin-right: 180px
+        li, a
+            position: relative
+            cursor: pointer
+            font-weight: normal
+            font-size: 14px
+            line-height: 151.68%
+            color: #FFFFFF
+            text-decoration: none
+            &::before
+                content: ">"
+                position: absolute
+                display: block
+                top: 40%
+                transform: translateY(-50%)
+                left: -15px
+            &:hover
+                color: #86BC42
+    &__contacts
+        width: 300px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__phone
+        margin-top: 25px
+    &__email
+        margin-top: 11px
+        img
+            margin-left: 0
+    &__items
+        display: flex
+        justify-content: center
+        width: 71.72%
+        height: 190px
+        background: #4B5464
+        padding: 23px 80px 32px 25px
+    &__header
+        font-weight: 600
+        font-size: 14px
+        line-height: 18px
+        text-transform: uppercase
+        color: #FFFFFF
+    &__divider
+        margin-top: 77px 
+        width: 78px
+        height: 0.4px
+        background: #FFFFFF
+        transform: rotate(90deg)
+        
