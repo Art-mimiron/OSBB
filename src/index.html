@@ -24,7 +24,7 @@
                     </div>
                     <div>
                         <div class="head__name">
-                            <h1 class="head__header"><span>ОСББ</span> "Тест"</h1>
+                            <h1 class="head__header"><a href="#"><span>ОСББ </span>"Тест"</a></a></h1>
                         </div>
                     </div>
                     <div>
@@ -143,6 +143,36 @@
             </div>
         </div>
     </section>
+    <section class="rates">
+        <div class="rates__wrapper">
+            <img src="img/Icons/title_line.svg" class="title_line">
+            <h2 class="title">тарифы</h2>
+            <div class="rates__calculator">
+                <form action="#" class="rates__form">
+                    <label for="square">Введите площадь вашего дома (кв/м)</label>
+                    <input type="number" id="square" min="1">
+                    <label for="aparts">Введите количество квартир</label>
+                    <input type="number" id="aparts" min="1">
+                    <label for="month">Количество месяцев</label>
+                    <div class="month">
+                        <input type="radio" id="radio-1" name="month" value="3 мес." checked>
+                        <label for="radio-1">3 мес.</label>
+                        <input type="radio" id="radio-2" name="month" value="6 мес.">
+                        <label for="radio-2">6 мес.</label>
+                        <input type="radio" id="radio-3" name="month" value="12 мес.">
+                        <label for="radio-3">12 мес.</label>
+                    </div>
+                </form>
+                <div class="rates__descr">
+                    <div class="all">*Цена на услугу в целом - 600.00 грн.</div>
+                    <div class="one">**Сумма на одну квартиру в месяц - 600.00 грн.</div>
+                    <div class="free">Начиная с момента регистрации ОСМД на <br> сайте предоставляется <span class="days">90 дней <br> БЕСПЛАТНОГО</span> использования сервиса.</div>
+                    <div class="counter">Стоимость: <span>0.00 грн</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/script.js"></script>
 </body>
