@@ -1,0 +1,194 @@
+@media screen and ( max-width: 1650px )
+    .feed
+        padding: 50px 0
+    .feed__header
+        margin-left: 67px
+    .feed__descr
+        margin-left: 135px
+    .footer__list
+        margin-right: 0px
+
+@media screen and ( max-width: 1280px )
+    .rates
+        padding: 48px 30px
+        &__wrapper
+            width: 960px
+    .info
+        &__partners
+            padding: 37px 10px 70px 10px
+        &__descr
+            height: 420px
+            font-size: 14px
+    .footer
+        &__items
+            padding: 23px 0px 32px 10px
+        &__list
+            width: 420px
+    .portfolio
+        &__descr
+            padding: 0 130px
+    .feed
+        &__text
+            padding-top: 0px
+        &__descr
+            font-size: 14px
+            margin-left: 76px
+            margin-top: 30px
+            a
+                font-size: 14px
+        &__header
+            margin-left: 35px
+            &::before
+                width: 36px
+                left: -35px
+@media screen and ( max-width: 1024px )
+    header
+        height: 41px
+    .head > div.container
+        width: auto
+        margin-left: 30px
+    .head
+        height: 41px
+        &__wrapper
+            height: 41px
+        &__login
+            display: flex
+            align-items: center
+        &__name
+            display: none
+        &__contacts
+            display: flex
+            align-items: center
+        &__phone
+            display: flex
+            width: 157px
+        &__email
+            display: flex
+    .xs-visible
+        display: block
+        margin-left: 70px
+        margin-top: 2px
+    .xs-hide
+        display: none
+    .menu__list
+        position: fixed
+        flex-direction: column
+        justify-content: space-around
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 80px 20px
+        background-color: rgba(75, 84, 100, 0.808)
+        transition: 0.6s all
+        &_active
+            left: 0
+            padding: 80px 40px 80px 40px
+    .menu__item
+        border: none
+        padding-right: 0
+    .menu__link
+        font-size: 20px
+        color: #fff
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 42%
+        transform: translateY(-50%)
+        width: 36px
+        height: 12px
+        margin-right: 14px
+        span
+            display: block
+            height: 2px
+            background-color: #86BC42
+            margin-top: 3px
+            transition: 0.3s all
+        &_active
+            span
+                margin-top: -2px
+                &:first-child
+                    transform: translateY(8px) rotate(-45deg)
+                &:last-child
+                    transform: translateY(8px) rotate(45deg)
+                &:nth-child(2)
+                    display: none
+    .rates
+        min-height: 384px
+        &__wrapper
+            width: 708px
+            height: 290px
+            padding: 16px 12px 21px 23px
+        &__form
+            margin-left: 0
+        &__calculator
+            margin-top: 0
+            form
+                #square, #aparts
+                    width: 261px
+                    height: 35px
+                label
+                    font-size: 12px
+        &__descr
+            font-size: 12px
+            line-height: 1.8
+            margin-left: 100px
+            div.free
+                margin-left: 39px
+                margin-top: 28px
+                &::before
+                    width: 24px
+                    height: 27px
+                    left: -39px
+            div.counter
+                font-size: 12px
+                margin-top: 24px
+        .month
+            label
+                margin-right: 13px
+    .feed
+        &__text
+            height: 800px
+            text-align: center
+        &__carousel_xs
+            display: block
+    .promo
+        &__wrapper
+            width: 622px
+            height: 342px
+            padding: 34px 0
+        &__header
+            font-size: 26px
+            span
+                font-size: 19px
+        &__form
+            margin-top: 35px
+            width: 421px
+            height: 52px
+            input
+                width: 114px
+                height: 30px
+                padding: 8px 10px
+                font-size: 12px
+                &:nth-child(2)
+                    width: 162px
+    .button
+        width: 86px
+        height: 30px
+        font-size: 11px
+    .footer
+        &__items
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 300px
+            padding-left: 31px
+        &__list
+            margin-top: 18px
+        &__phone
+            margin-top: 18px
+        &__divider
+            display: none
+        &__about
+            padding: 71px 25px 15px 20px
