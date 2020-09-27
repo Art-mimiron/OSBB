@@ -1,6 +1,12 @@
 .feed
     min-height: 734px
     padding: 50px 167px 56px 167px
+    position: relative
+    &__plant
+        position: absolute
+        left: 0
+        bottom: 60px
+        z-index: 0
     &__carousel
         margin-top: 39px
         &_xs
@@ -51,6 +57,7 @@
             top: -18px
             left: -114px
     &__descr
+        z-index: 1
         margin: 37px 0 40px 290px
         font-family: "OpenSans"
         font-weight: 400
@@ -60,4 +67,8 @@
         p
             font-family: "OpenSans"
             font-weight: 400
+        a
+            z-index: 1
+.xss_visible
+    display: none
     

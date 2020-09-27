@@ -1,5 +1,10 @@
 .footer
     height: 180px
+    position: relative
+    &__plant
+        position: absolute
+        right: 0
+        bottom: -10px
     &__wrapper
         display: flex
         justify-content: center
@@ -54,6 +59,7 @@
             &:hover
                 color: #86BC42
     &__contacts
+        z-index: 1
         width: 300px
         display: flex
         flex-direction: column
@@ -84,4 +90,5 @@
         height: 0.4px
         background: #FFFFFF
         transform: rotate(90deg)
-        
+.xss_visible
+    display: none

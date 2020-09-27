@@ -1,7 +1,13 @@
 .info
+    position: relative
     min-height: 580px
     padding-bottom: 76px
     background: #fff
+    &__plant
+        position: absolute
+        right: 0;
+        top: -186px
+        z-index: 0
     &__wrapper
         display: flex
         align-items: center
@@ -18,8 +24,9 @@
             line-height: 20px
             color: #9CA3AB
     &__partners
+        z-index: 1
         width: 458px
-        height: 385px
+        min-height: 385px
         padding: 37px 48px 70px 48px
         background: #FFFFFF
         box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15)
@@ -55,3 +62,5 @@
                 width: 56px 
                 height: 56px
                 background: url(../img/icons/list_ellipse.png) center (center / cover) no-repeat
+.xss_visible
+    display: none
