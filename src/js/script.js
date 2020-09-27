@@ -5,8 +5,15 @@ const slider = tns({
     autoplay: false,
     gutter: 31,
     controls: false,
-    navPosition: 'bottom'
-  });
+    navPosition: 'bottom',
+    responsive: {
+      0: {
+        disable: true
+      },
+      768: {
+        disable: false
+      }
+    }});
 
 document.querySelector(".dot_prev").addEventListener('click', function () {
   slider.goTo('prev');
@@ -21,7 +28,8 @@ const slider2 = tns({
     slideBy: 'page',
     autoplay: false,
     controls: false,
-    gutter: 50,
+    gutter: 55,
+    edgePadding: -2,
     autoHeight: true,
     navPosition: 'bottom',
     responsive: {
@@ -49,15 +57,14 @@ const sliderxs = tns({
     container: '.feed__carousel_xs',
     items: 1,
     slideBy: 'page',
+    mouseDrag: true,
     autoplay: false,
     controls: false,
-    gutter: 0,
+    center: true,
+    gutter: 100,
     autoHeight: true,
     navPosition: 'bottom',
     responsive: {
-      0: {
-        disable: false
-      },
       1024: {
         disable: true
       }

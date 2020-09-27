@@ -22,6 +22,7 @@
     .footer
         &__items
             padding: 23px 0px 32px 10px
+            width: 64.72%
         &__list
             width: 420px
     .portfolio
@@ -41,7 +42,12 @@
             &::before
                 width: 36px
                 left: -35px
-@media screen and ( max-width: 1024px )
+@media screen and ( max-width: 1023px )
+    .xs-visible-plant
+        display: block
+        position: absolute
+        bottom: -120px
+        right: 0
     header
         height: 41px
     .head > div.container
@@ -64,6 +70,8 @@
             width: 157px
         &__email
             display: flex
+        &__registr
+            width: 181px
     .xs-visible
         display: block
         margin-left: 70px
@@ -101,7 +109,8 @@
         margin-right: 14px
         span
             display: block
-            height: 2px
+            height: 3px
+            border-radius: 25%
             background-color: #86BC42
             margin-top: 3px
             transition: 0.3s all
@@ -147,13 +156,9 @@
         .month
             label
                 margin-right: 13px
-    .feed
-        &__text
-            height: 800px
-            text-align: center
-        &__carousel_xs
-            display: block
     .promo
+        min-height: 400px
+        padding: 26px 0
         &__wrapper
             width: 622px
             height: 342px
@@ -173,10 +178,77 @@
                 font-size: 12px
                 &:nth-child(2)
                     width: 162px
+        &__icons
+            margin-top: 37px
+            width: 448px
+        &__icon
+            font-size: 12px
+            img
+                width: 41px
+                margin-bottom: 20px
+            &:nth-child(1)
+                &::before
+                    font-size: 17px
+                    bottom: 71px
+                    left: 17px
+                &::after
+                    bottom: 64px
+                    right: -72px
+                    width: 71px
+            &:nth-child(2)
+                &::before
+                    font-size: 17px
+                    bottom: 71px
+                    left: 33px
+                &::after
+                    bottom: 64px
+                    right: -72px
+                    width: 71px
+            &:nth-child(3)
+                &::before
+                    font-size: 17px
+                    bottom: 71px
+                    left: 19px
+    .feed
+        padding: 0 0 60px 0
+        &__plant
+            bottom: 5px
+        &__header
+            margin: 0 auto
+            margin-top: 68px
+            width: 555px
+            text-align: left
+            &::before
+                width: 98px
+                left: -95px
+        &__text
+            text-align: center
+            height: 800px
+            width: 579px
+            img
+                width: 579px
+                margin-left: -22px
+        &__descr
+            margin: 0 auto
+            text-align: left
+            margin-top: 12px
+            width: 555px
+            a 
+                margin-left: 375px
+        &__carousel_xs
+            display: block
+            margin: 0 auto
     .button
         width: 86px
         height: 30px
         font-size: 11px
+        &_line
+            margin-top: 20px
+            width: 209px
+            height: 41px
+            font-size: 14px
+        &__feed
+            width: 226px
     .footer
         &__items
             display: flex
@@ -192,3 +264,251 @@
             display: none
         &__about
             padding: 71px 25px 15px 20px
+    .info
+        &__plant
+            top: -139px
+        &__wrapper
+            display: flex
+            flex-direction: column
+        &__descr
+            margin-right: 0
+            margin-top: 20px
+        &__partners
+            margin-top: 35px
+            width: 422px
+            padding: 30px 20px 70px 20px
+    .portfolio
+        min-height: 490px
+        padding: 34px 0
+        &__descr
+            padding: 0 0
+@media screen and ( max-width: 767px )
+    .xss_hidden
+        display: none
+    .xss_visible
+        display: block
+        position: absolute
+    .container
+        width: 94.5%
+    .title
+        font-size: 16px
+        width: 331px
+        margin: 0 auto
+    .mob_hidden
+        display: none
+    header
+        height: 70px
+    .menu__list_active
+        width: 75%
+    .head
+        height: 70px
+        &__wrapper
+            height: 70px
+        &__contacts
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: space-between
+            height: 52px
+        &__email
+            img
+                margin-left: 0
+        &__cabinet
+            display: flex
+            flex-direction: column-reverse
+            align-items: flex-end
+            justify-content: space-between
+        &__regist
+            height: 37px
+            margin-bottom: 4px
+        &__login
+            margin-bottom: 4px
+            img
+                width: 35px
+    .promo
+        min-height: 247px
+        &__header
+            font-size: 20px
+            span
+                font-size: 15px
+        &__wrapper
+            width: 345px
+            height: 195px
+            padding: 19px 0
+        &__form
+            padding: 9px 10px
+            height: 48px
+            margin-top: 12px
+            display: flex
+            flex-wrap: wrap
+            width: 308px
+            button
+                margin: 0 auto
+                margin-top: 25px
+                position: relative
+                &::before
+                    content: ""
+                    position: absolute
+                    width: 102px
+                    height: 42px
+                    background-color: #fff
+                    border-radius: 37px
+                    z-index: -1
+                    top: -6px
+                    left: -8px
+    .mob_visible
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        img
+            width: 345px
+            margin-top: 25px
+    .button
+        &_line
+            margin-top: 39px
+    .portfolio
+        padding: 27px 0
+        &__descr
+            font-size: 14px
+    .info
+        padding: 0 5px 39px 5px
+        &__plant
+            right: 0px
+            top: -90px
+        &__wrapper
+            margin: 0 auto
+            margin-top: 10px
+            width: 345px
+        &__descr
+            width: 345px
+            height: 540px
+            p 
+                font-size: 14px
+        &__partners
+            width: 345px
+            height: 374px
+            padding: 29px 9px
+        &__partner
+            padding-left: 23px
+    .rates
+        min-height: 550px
+        padding: 33px 0
+        &__wrapper > h2
+            width: 254px
+        &__wrapper
+            width: 345px
+            height: 484px
+            padding: 27px 31px 25px 31px
+        &__calculator
+            display: flex
+            flex-direction: column
+        &__form
+            width: 262px
+            height: 191px
+            #aparts, #square
+                margin-bottom: 8px
+            label
+                margin-bottom: 2px
+        &__descr
+            margin-left: 0
+            padding-top: 15px
+            width: 282px
+            height: 170px
+    .feed
+        padding: 40px 0 0 0
+        &__plant
+            bottom: -88px
+        &__header
+            margin: 0 auto
+            margin-top: 30px
+            font-size: 14px
+            width: 335px
+        &__text
+            width: 345px
+            height: 680px
+            img
+                width: 345px
+                height: 253px
+                margin-left: -15px
+        &__descr
+            width: 335px
+            height: 276px
+            a 
+                margin-left: 166px
+    .footer
+        &__plant
+            bottom: -375px
+        &__wrapper
+            display: flex
+            flex-direction: column
+        &__about
+            padding: 35px 15px
+            text-align: center
+            h2 
+                text-shadow: none
+        &__descr
+            text-align: center
+        &__items
+            width: 100%
+            height: 320px
+            padding: 28px 20px 25px 18px
+        &__list
+            padding-left: 15px
+            width: 331px
+            height: 105px
+        &__item
+            width: 166px
+            a
+                width: 166px
+        &__phone
+            margin-top: 21px
+@media screen and ( max-width: 374px )
+    .container
+        width: 99%
+    .head > div.container
+        margin-left: 0
+    .head
+        &__regist
+            width: 145px
+    .promo
+        &__wrapper
+            width: 315px
+    .mob_visible
+        img
+            width: 315px
+    .info
+        padding: 0 0px 39px 0px
+        &__wrapper
+            width: 315px
+        &__descr
+            width: 315px
+        &__partners
+            width: 315px
+            margin-top: 65px
+            padding: 29px 3px
+        ol
+            li::before
+                margin-right: 28px
+    .rates
+        &__wrapper
+            width: 315px
+            padding: 27px 11px 25px 15px
+    .feed
+        &__text
+            width: 315px
+            img
+                width: 315px
+        &__header
+            width: 315px
+        &__descr
+            width: 315px
+            a 
+                margin-left: 140px
+    .footer
+        &__items
+            padding: 28px 0px 25px 0px
+        &__list
+            width: 315px
+        &__item
+            width: 135px
